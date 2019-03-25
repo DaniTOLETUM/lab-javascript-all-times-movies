@@ -37,7 +37,7 @@ function ratesAverage(a) {
     if (movie.rate == '') {
       movie.rate = null;
     } else {
-      return (allRate += parseFloat(movie.rate));
+      allRate += movie.rate;
     }
   });
   return parseFloat((allRate / a.length).toFixed(2));
